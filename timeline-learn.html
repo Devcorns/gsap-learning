@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Time line</title>
+    <link href="./assets/timeline-learn.css" rel="stylesheet">
+</head>
+<body>
+    <section class="bulb-section">
+        <img src="https://icon2.cleanpng.com/20171221/zew/light-bulb-png-pic-5a3c39d22187a3.1526649215138964021374.jpg" class="first-bulb">
+        <img src="https://p.kindpng.com/picc/s/722-7225717_light-bulb-png-hd-light-bulb-transparent-logo.png" class="first-bulb2" >
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+    var tl = gsap.timeline();
+    tl.to(".first-bulb", {rotation: -270, duration: 1, ease: "elastic"})
+    .to(".first-bulb2", {rotation: -360, duration: 15, ease: "elastic"});
+    // .to(".class3", {rotation: -180, duration: 1, ease: "elastic"});
+    </script>
+</body>
+</html>
